@@ -1,10 +1,13 @@
 # Enixa
 
-enixia is a website created in PHP for the Enixia association of eXia.CESI
+Enixia is a website created in PHP for the Enixia association of eXia.CESI
 
-## Requirement
+-----------------------
 
-Make sure you have installed : 
+## Requirements
+
+### Linux requirements
+Make sure you have installed :
 - [git](https://git-scm.com/book/fr/v1/D%C3%A9marrage-rapide-Installation-de-Git)
 - [npm](https://www.npmjs.com/)
 - [composer](https://getcomposer.org/)
@@ -12,7 +15,20 @@ Make sure you have installed :
 - [mysql](https://dev.mysql.com/downloads/installer/) or [mariadb](https://mariadb.com/get-started-with-mariadb/)
 - [nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
 
+### Windows requirements
+Make sure you have installed :
+- [git](https://git-scm.com/book/fr/v1/D%C3%A9marrage-rapide-Installation-de-Git)
+- [npm](https://www.npmjs.com/)
+- [composer](https://getcomposer.org/)
+- [wamp](http://www.wampserver.com/)
+
+
 ## Installation
+
+- [Linux](https://github.com/enixia/Website/tree/Dev#On-Linux)
+- [Windows](https://github.com/enixia/Website/tree/Dev#On-Windows)
+
+### On Linux
 
 First clone the repo :
 
@@ -20,7 +36,7 @@ First clone the repo :
 git clone https://github.com/enixia/Website.git
 ```
 
-then copy .env.example and configure the database connection
+Then, copy .env.example and configure the database connection
 
 ```bash
 cp .env.example .env
@@ -59,7 +75,7 @@ server {
 	#
 	location ~ \.php$ {
 		include snippets/fastcgi-php.conf;
-	
+
 		# With php7.0-cgi alone:
 		#fastcgi_pass 127.0.0.1:9000;
 		# With php7.0-fpm:
@@ -84,13 +100,13 @@ enixia.fr
 admin.enixia.fr
 ```
 
-Then we can finished the installation with a simple command : 
+Then we can finished the installation with a simple command :
 
 ```
 composer install
 ```
 
-note: after install completed the command will automatically do this :
+Note: after install completed the command will automatically do this :
 
 ```
 npm install
@@ -102,6 +118,45 @@ php artisan migrate --seed
 ```
 
 note: you will probably have to change the file permissions permissions for laravel see [here](https://vijayasankarn.wordpress.com/2017/02/04/securely-setting-file-permissions-for-laravel-framework/)
+
+### On Windows
+
+Make sure you have read all the [Requirements](https://github.com/enixia/Website/tree/Dev#Windows-requirements) !
+
+First clone the repo in C:/wamp64/www/ :
+
+```
+cd C:/wamp64/www/
+git clone https://github.com/enixia/Website.git
+```
+
+Then, copy .env.example, rename it .env and configure the database connection.
+
+After that, you'll need to setup two new vhosts with wamp :
+1. Launch WampServer.
+2. Open your browser and go to http://localhost or http://172.0.0.1.
+3. Click on Add a Virtual host.
+4. In the Name Field put enixia.fr and for the Path C:\\wamp64\\www\\Website\\public (Warning, \\ not /).
+5. Repeat stage 2 and 3 then input admin.enixia.fr for the name and C:\\wamp64\\www\\Website\\public for the Path (Again \\ not /).
+6. Restart WampServer.
+
+Run these few commands :
+
+```
+cd C:/wamp64/www/
+composer install
+```
+
+```
+npm install
+npm run dev
+php artisan storage:link
+php -r \"file_exists('.env') || copy('.env.example', '.env');\"
+php artisan key:generate --ansi
+php artisan migrate --seed
+```
+
+There you go !
 
 ## Usage
 
