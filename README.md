@@ -132,18 +132,20 @@ git clone https://github.com/enixia/Website.git
 
 Then, copy .env.example, rename it .env and configure the database connection.
 
+Note : You will probably need to rename it through an external editor, Windows doesn't like file name that begins with "." .
+
 After that, you'll need to setup two new vhosts with wamp :
 1. Launch WampServer.
 2. Open your browser and go to http://localhost or http://172.0.0.1.
 3. Click on Add a Virtual host.
-4. In the Name Field put enixia.fr and for the Path C:\\wamp64\\www\\Website\\public (Warning, \\ not /).
+4. In the Name field put enixia.fr and for the Path C:\\wamp64\\www\\Website\\public (Warning, \\ not /).
 5. Repeat stage 2 and 3 then input admin.enixia.fr for the name and C:\\wamp64\\www\\Website\\public for the Path (Again \\ not /).
 6. Restart WampServer.
 
 Run these few commands :
 
 ```
-cd C:/wamp64/www/
+cd C:/wamp64/www/Website
 composer install
 ```
 
