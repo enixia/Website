@@ -50,7 +50,7 @@ touch /etc/nginx/site-enabled/enixia
 nano /etc/nginx/site-enabled/enixia
 ```
 
-Copy and the paste the follow content
+Copy and the paste the following content
 
 ```
 #
@@ -85,7 +85,7 @@ server {
 
 ```
 
-note: replace the path /path/to/enixia with the path where you cloned the site
+Note: replace the path /path/to/enixia with the path where you cloned the site
 
 Restart nginx
 
@@ -93,20 +93,20 @@ Restart nginx
 service nginx restart
 ```
 
-Configure your dns to match these domain (see below) with the IP of your nginx server.
+Configure your dns to match these domains (see below) with the IP of your nginx server.
 
 ```
 enixia.fr
 admin.enixia.fr
 ```
 
-Then we can finished the installation with a simple command :
+Then we can finish the installation with a simple command :
 
 ```
 composer install
 ```
 
-Note: after install completed the command will automatically do this :
+Note: when the installation is completed, the command will automatically do this :
 
 ```
 npm install
@@ -117,7 +117,7 @@ php artisan key:generate --ansi
 php artisan migrate --seed
 ```
 
-note: you will probably have to change the file permissions permissions for laravel see [here](https://vijayasankarn.wordpress.com/2017/02/04/securely-setting-file-permissions-for-laravel-framework/)
+Note: you will probably have to change the file permissions for Laravel see [here](https://vijayasankarn.wordpress.com/2017/02/04/securely-setting-file-permissions-for-laravel-framework/)
 
 ### On Windows
 
