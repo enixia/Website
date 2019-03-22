@@ -1,6 +1,5 @@
 {
     "/storage/app/public/js/app.js": "/storage/app/public/js/app.js",
-    "/storage/app//css/app.css": "/storage/app//css/app.css",
     "/storage/app/public/admin/js/bootstrap.min.js": "/storage/app/public/admin/js/bootstrap.min.js",
     "/storage/app/public/admin/js/jquery.min.js": "/storage/app/public/admin/js/jquery.min.js",
     "/storage/app/public/admin/js/morris.min.js": "/storage/app/public/admin/js/morris.min.js",
@@ -24,5 +23,6 @@
     "/storage/app/public/admin/css/jquery-jvectormap-1.2.2.css": "/storage/app/public/admin/css/jquery-jvectormap-1.2.2.css",
     "/storage/app/public/admin/css/datepicker3.css": "/storage/app/public/admin/css/datepicker3.css",
     "/storage/app/public/admin/css/daterangepicker-bs3.css": "/storage/app/public/admin/css/daterangepicker-bs3.css",
-    "/storage/app/public/admin/css/bootstrap3-wysihtml5.min.css": "/storage/app/public/admin/css/bootstrap3-wysihtml5.min.css"
+    "/storage/app/public/admin/css/bootstrap3-wysihtml5.min.css": "/storage/app/public/admin/css/bootstrap3-wysihtml5.min.css",
+    "/storage/app//css/app.css": "/storage/app//css/app.css"
 }
