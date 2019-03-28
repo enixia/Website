@@ -9,7 +9,7 @@ Enixia is a website created in PHP for the Enixia association of eXia.CESI
 ### Linux requirements
 Make sure you have installed :
 - [git](https://git-scm.com/book/fr/v1/D%C3%A9marrage-rapide-Installation-de-Git)
-- [npm](https://www.npmjs.com/)
+- [npm](https://www.npmjs.com/get-npm)
 - [composer](https://getcomposer.org/)
 - [php](http://php.net/manual/fr/install.php)
 - [mysql](https://dev.mysql.com/downloads/installer/) or [mariadb](https://mariadb.com/get-started-with-mariadb/)
