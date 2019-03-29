@@ -18,7 +18,7 @@ Make sure you have installed :
 ### Windows requirements
 Make sure you have installed :
 - [git](https://git-scm.com/book/fr/v1/D%C3%A9marrage-rapide-Installation-de-Git)
-- [npm](https://www.npmjs.com/)
+- [npm](https://www.npmjs.com/get-npm)
 - [composer](https://getcomposer.org/)
 - [wamp](http://www.wampserver.com/)
 
