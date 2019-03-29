@@ -11,6 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
+/*
+Template
+*/
+mix.copy('vendor/components/jquery/jquery.min.js', 'storage/app/public/app/js/jquery.js');
+// mix.copy('resources/css/template/*', 'storage/app/public/css/template.css');
 
 
 

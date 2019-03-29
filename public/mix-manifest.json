@@ -1,6 +1,7 @@
 {
     "/storage/app/public/js/app.js": "/storage/app/public/js/app.js",
     "/storage/app//css/app.css": "/storage/app//css/app.css",
+    "/storage/app/public/app/js/jquery.js": "/storage/app/public/app/js/jquery.js",
     "/storage/app/public/admin/js/bootstrap.min.js": "/storage/app/public/admin/js/bootstrap.min.js",
     "/storage/app/public/admin/js/jquery.min.js": "/storage/app/public/admin/js/jquery.min.js",
     "/storage/app/public/admin/js/morris.min.js": "/storage/app/public/admin/js/morris.min.js",
